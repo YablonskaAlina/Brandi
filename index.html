@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandi</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="topheader">
+                    <ul class="logo">
+                        <li class="logo-text"><a href="./index.html">Brandi</a></li>
+                        <li class="text">Я - твій слоган</li>
+                    </ul>
+                </div>
+
+                <ul class="menu">
+                    <li class="menu_item"> <a href="./index.html" class="menu_link active"> Головна </a> </li>
+                    <li class="menu_item"> <a href="#features" class="menu_link"> Можливості </a> </li>
+                    <li class="menu_item"> <a href="#works" class="menu_link"> Наші Роботи </a> </li>
+                    <li class="menu_item"> <a href="#team" class="menu_link"> Команда </a> </li>
+                    <li class="menu_item"> <a href="#contsct" class="menu_link"> Контакти </a> </li>
+                </ul>
+            </div>
+
+            <div class="humburger">
+                <span></span>
+            </div>
+        </nav>
+
+        <section class="radio">
+            <div>
+                <div class="radio__button radio__active"></div>
+                <div class="radio__button"></div>
+                <div class="radio__button"></div>
+            </div>
+        </section>
+
+        <section class="header_text">
+            <p><a href="#" class="meet">Зустрічайте</a> <strong>Brandi</strong>!</p>
+            <p><span class="creative">\creative</span> one page template.</p>
+            <div class="text-16">Ми команда професіоналів</div>
+        </section>
+
+        <section class="social">
+            <a href="#" class="social_item">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social_item">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social_item">
+                <i class="fab fa-google-plus-g"></i>
+            </a>
+            <a href="#" class="social_item">
+                <i class="fab fa-dribbble"></i>
+            </a>
+        </section>
+    </header>
+
+    <section id="features">
+        <div class="container">
+            <div class="subheader">
+                <h2>можливості</h2>
+                <div class="love">
+                    <i class="fa fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="features__decsription">
+                <div class="branding">
+                    <div>
+                        <div class="img_circle">
+                            <img src="./icon/features/feather.png" alt="branding">
+                        </div>
+                    </div>
+                    <div class="branding_text">
+                        <h3>брендинг</h3>
+                        <p>Ми компанія, що знаходиться на передовій технологічного розвитку і надаємо різноманітні послуги в галузі інформаційних технологій.</p>
+                    </div>
+                </div>
+
+                <div class="development">
+                    <div>
+                        <div class="img_circle">
+                            <img src="./icon/features/pencil.png" alt="development">
+                        </div>
+                    </div>
+                    <div class="development_text">
+                        <h3>Розробка</h3>
+                        <p>Наша команда експертів працює над розробкою інноваційних програмних рішень, веб-сайтів та мобільних додатків. </p>
+                    </div>
+                </div>
+
+                <div class="consulting">
+                    <div>
+                        <div class="img_circle">
+                            <img src="./icon/features/megaphone.png" alt="consulting">
+                        </div>
+                    </div>
+                    <div class="consulting_text">
+                        <h3>консультування</h3>
+                        <p>Надаємо експерті поради та допомогу клієнтам у розвитку, позиціонуванні та управлінні їхніми брендами.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="radio_black">
+                <div class="radio_black_button radio_black_active"></div>
+                <div class="radio_black_button"></div>
+                <div class="radio_black_button"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works">
+        <div class="container">
+            <div class="subheader">
+                <h2>Наші роботи</h2>
+                <div class="love">
+                    <i class="fa fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="works_button">
+                <button class="btn btn-active" type="button">Всі</button>
+                <button class="btn" type="button">Брендинг</button>
+                <button class="btn" type="button">Web</button>
+                <button class="btn" type="button">Логотипи</button>
+                <button class="btn" type="button">Фотографії</button>
+            </div>
+            <div class="slider-controls">
+                <button onclick="showPreviousSlide()"><</button>
+                <div class="slider">
+                    <img src="img/works/1.png" alt="Slide 1">
+                    <img src="img/works/2.png" alt="Slide 2">
+                    <img src="img/works/3.png" alt="Slide 3">
+                    <img src="img/works/4.png" alt="Slide 4">
+                    <img src="img/works/5.png" alt="Slide 5">
+                    <img src="img/works/6.png" alt="Slide 6">
+                    <img src="img/works/7.png" alt="Slide 7">
+                    <img src="img/works/8.png" alt="Slide 8">
+                </div>
+                <button onclick="showNextSlide()">></button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="team">
+        <div class="container">
+            <div class="subheader">
+                <h2>Зустрічайте нашу комануд</h2>
+                <div class="love">
+                    <i class="fa fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="subheader_text">В нашій компанії знаходяться найкращі розробники, обладнані глибокими знаннями і досвідом у своїх сферах. Наші розробники володіють розширеним набором навичок і вмінь, що дозволяє нам втілювати навіть найскладніші проекти
+            </div>
+
+            <div class="team_people">
+                <div class="people">
+                    <div id="p1">
+                        <div class="hover">
+                            <div class="hover_content">
+                                <p class="hover_text">Nemo enim ipsam voluptatem quia voluptas
+                                    <p>sit asperantur aut odit aut fugit, sed qula consequuntur magnl dolores eos qui ratione voluptatem</p></p>
+                                <div class="hover_item">
+                                    <a href="#" class="link">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+
+                                    <a href="#" class="link">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+
+                                    <a href="#" class="link">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="people_description">
+                        John Filmr Doe
+                        <p>Головний менеджер</p>
+                    </div>
+                </div>
+
+                <div class="people">
+                    <div id="p2">
+                        <div class="hover">
+                            <div class="hover_content">
+                                <p class="hover_text">Nemo enim ipsam voluptatem quia voluptas
+                                    <p>sit asperantur aut odit aut fugit, sed qula consequuntur magnl dolores eos qui ratione voluptatem</p></p>
+                                <div class="hover_item">
+                                    <a href="#" class="link">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+
+                                    <a href="#" class="link">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+
+                                    <a href="#" class="link">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="people_description">
+                        Chystine Hineu
+                        <p>Провідний дизайнер</p>
+                    </div>
+                </div>
+
+                <div class="people">
+                    <div id="p3">
+                        <div class="hover">
+                            <div class="hover_content">
+                                <p class="hover_text">Nemo enim ipsam voluptatem quia voluptas
+                                    <p>sit asperantur aut odit aut fugit, sed qula consequuntur magnl dolores eos qui ratione voluptatem</p></p>
+                                <div class="hover_item">
+                                    <a href="#" class="link">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+
+                                    <a href="#" class="link">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+
+                                    <a href="#" class="link">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="people_description">
+                        Martin Matrone
+                        <p>Головний розробник</p>
+                    </div>
+                </div>
+
+                <div class="people">
+                    <div id="p4">
+                        <div class="hover">
+                            <div class="hover_content">
+                                <p class="hover_text">Nemo enim ipsam voluptatem quia voluptas
+                                    <p>sit asperantur aut odit aut fugit, sed qula consequuntur magnl dolores eos qui ratione voluptatem</p></p>
+                                <div class="hover_item">
+                                    <a href="#" class="link">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+
+                                    <a href="#" class="link">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+
+                                    <a href="#" class="link">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="people_description">
+                        Steve Flaulkin
+                        <p>Ul дизайнер</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="radio_black">
+                <div class="radio_black_button radio_black_active"></div>
+                <div class="radio_black_button"></div>
+                <div class="radio_black_button"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="facts">
+        <div class="vpart">
+            <div class="container">
+                <div class="subheader">
+                    <h2>Цікаві факти</h2>
+                    <div class="love">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </div>
+    
+                <div class="statistics">
+                    <div class="g1">
+                        <div class="img">
+                            <img src="./icon/part7/Clock.png" alt="Clock">
+                        </div>
+                        <p class="statistics_value">3200</p>
+                        <span class="statistics_text">годин роботи</span>
+                    </div>
+                
+                    <div class="g1">
+                        <div class="img">
+                            <img src="./icon/part7/Friends.png" alt="Friends">
+                        </div>
+                        <p class="statistics_value">120</p>
+                        <span class="statistics_text">Заодоволених клієнтів</span>
+                    </div>
+                
+                    <div class="g1">
+                        <div class="img">
+                            <img src="./icon/part7/Rocket.png" alt="Rocket">
+                        </div>
+                        <p class="statistics_value">360</p>
+                        <span class="statistics_text">реалізованих проектів</span>
+                    </div>
+                
+                    <div class="g1">
+                        <div class="img">
+                            <img src="./icon/part7/Cup.png" alt="Cup">
+                        </div>
+                        <p class="statistics_value">42</p>
+                        <span class="statistics_text">Нагород</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="subheader">
+                <h2>Поспілкуємось?</h2>
+                <div class="love">
+                    <i class="fa fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="subheader_text">Вкажіть свої дані, щоб ми могли зв'язатись з вами
+            </div>
+
+            <div class="text0">
+				<div class="text1">
+					<p>Наше місцезнаходження</p>
+					<div>
+						<p>2345 Setwant natrer, 1234,</p>
+						<p>Washington. United States.</p>
+						<p>hello@brand.com</p>
+						<a href="https://kaya-shop.com.ua/">www.brandi.com</a>
+					</div>
+				</div>
+
+				<div class="text2">
+					<p >Привіт!</p>
+					<form action="#">
+                        <div class="get_info">
+                            <label for="name">
+                                <input type="text" name="name" id="name" placeholder="Ім'я">
+                            </label>
+                        
+                            <label for="email">
+                                <input type="email" name="email" id="email" placeholder="Email">
+                            </label>
+                        </div>
+                        <div class="message">
+                            <label for="message">Твоє повідомлення
+                                <input type="text" name="message" id="message">
+                            </label>
+                        </div>
+                    </form>
+					<div class="send">
+							<button class="btn_send"><i class="fab fa-message"></i>Відправити повідомлення</button>
+					</div>
+				</div>
+
+				<div class="text3">
+					<div class="block1">
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                        <a href="#"><img src="./icon/part9/forrst.png" alt="Forrst"></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </div>
+				</div>
+			</div>
+        </div>
+    </section>
+
+
+
+    <div class="weather-container">
+        <h2>Погода</h2>
+        <div id="weather-icon"></div>
+        <p id="temperature"></p>
+        <p id="description"></p>
+    </div>
+
+
+
+
+    <section class="map"></section>
+
+    <footer>
+        <div class="container">
+            <div class="fext1">
+                <div>
+                    <p class="fext_text logo-text">Brandi</p>
+                </div>
+                <p class="fext_description">"Brandi" - це сучасне агентство веб-розробки, спеціалізоване на створенні професійних та привабливих веб-сайтів. Ми пропонуємо індивідуальні рішення для вашого бізнесу, розроблені з урахуванням усіх ваших потреб та вимог. Звертайтеся до нас, і ми допоможемо вам побудувати сильний і успішний присутність в Інтернеті з допомогою наших індивідуально розроблених веб-сайтів.</p>
+            </div>
+
+            <div class="fext2">
+                <div>
+                    <p class="fext_text">Підпишись</p>
+                </div>
+                
+                <div class="search">
+                    <input type="text" class="search1">
+					<form class="search2">
+						<button class="bearch" type="button"></button>
+					</form>
+                </div>
+
+                <p class="fext_description">Вкажіть свою пошту, щоб ви отримували повідомлення на поштову скриньку про останні новини нашої компанії </p>
+            </div>
+
+            <div class="fext3">
+                <div>
+                    <p class="fext_text">Інші ресурси</p>
+                </div>
+                <div class="fext3_grid">
+                    <div class="block1">
+                        <a>Envato</a>
+                        <a>Themecurve</a>
+                        <a>Kreativeshowcase</a>
+                        <a>Freebiescurve</a>
+                    </div>
+                    <div class="block2">
+                        <a>Themeforest</a>
+                        <a>Microsoft</a>
+                        <a>Google</a>
+                        <a>Yahoo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fext4">
+                <div>
+                    <p>Created with <i class="fa fa-heart"></i> by 
+                        <span>themecurve</span>, exclusive for kreativeshowcase</p>
+                </div>
+                <div>
+                    <p style="color: black;font-size: 13px">&copy; 2014 Brandi. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/slider.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/weather.js"></script>
+</body>
+</html>
